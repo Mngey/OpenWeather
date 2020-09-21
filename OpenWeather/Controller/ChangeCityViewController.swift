@@ -25,6 +25,8 @@ class ChangeCityViewController: UIViewController {
         delegate?.userEnteredNewCityName(city: cityName)
         self.dismiss(animated: true, completion: nil)
     }
+    
+    
 }
  
 

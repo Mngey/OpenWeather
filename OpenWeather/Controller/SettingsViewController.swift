@@ -10,12 +10,16 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var settingsButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        settingsButton.layer.cornerRadius = 10
+        settingsButton.layer.borderWidth = 2
+        settingsButton.layer.borderColor = UIColor.systemGray2.cgColor
+        settingsButton.layer.backgroundColor = UIColor.gray.cgColor
+      
+        
     }
-    
     @IBAction func settingsButtonTapped(_ sender: Any) {
         guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
             return
